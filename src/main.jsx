@@ -8,8 +8,10 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
+import Login from './components/Login/Login.jsx';
+import Signup from './components/Signup/Signup.jsx'; // Optional
+ 
 
-// Removed: import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +20,10 @@ const router = createBrowserRouter(
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />
+        <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Signup />} /> {/* Optional if using Get Started */}
     </Route>
+   
   )
 )
 
