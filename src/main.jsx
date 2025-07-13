@@ -9,7 +9,8 @@ import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
 import Login from './components/Login/Login.jsx';
-import Signup from './components/Signup/Signup.jsx'; // Optional
+import Signup from './components/Signup/Signup.jsx'; 
+import BookParking from './components/User/BookParking.jsx'
  
 
 
@@ -20,8 +21,10 @@ const router = createBrowserRouter(
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />
-        <Route path="login" element={<Login />} />
-      <Route path="signup" element={<Signup />} /> {/* Optional if using Get Started */}
+      <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Signup />} /> 
+      <Route path='parking' element={<BookParking />} />
+
     </Route>
    
   )

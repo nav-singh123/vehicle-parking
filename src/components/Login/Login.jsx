@@ -3,7 +3,6 @@ import React from 'react';
 export default function Login() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      {/* ⬇ Larger container: wider and more padded */}
       <div className="w-full max-w-xl p-12 bg-white rounded-xl shadow-xl">
         <h2 className="text-3xl font-bold mb-8 text-center text-orange-700">Log In</h2>
         
