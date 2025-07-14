@@ -11,6 +11,8 @@ import User from './components/User/User.jsx'
 import Login from './components/Login/Login.jsx';
 import Signup from './components/Signup/Signup.jsx'; 
 import BookParking from './components/User/BookParking.jsx'
+import AdminDashboard from './components/Admin/AdminDashboard';
+
  
 
 
@@ -24,6 +26,8 @@ const router = createBrowserRouter(
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<Signup />} /> 
       <Route path='parking' element={<BookParking />} />
+      <Route path='admin/dashboard' element={<AdminDashboard />} /> {/* ✅ Add this */}
+
 
     </Route>
    
